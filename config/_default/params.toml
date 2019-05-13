@@ -50,7 +50,7 @@ time_format = "3:04 PM"
 ############################
 
 # Enter contact details (optional). To hide a field, clear it to "".
-email = ""
+email = "iam@manchester.ac.uk"
 phone = ""
 address = "Oxford Rd, LF1 & LF7, Kilburn Building, University of Manchester"
 

@@ -1,6 +1,6 @@
 ---
 # Display name
-name: Julio Vega
+name: Interaction Analysis and Modelling Lab
 
 # Username (this should match the folder name)
 authors:
@@ -10,28 +10,28 @@ authors:
 superuser: true
 
 # Role/position
-role: Postdoctoral Researcher
+#role: Postdoctoral Researcher
 
 # Organizations/Affiliations
 organizations:
-- name: University of Bristol
-  url: "https://juliovega.info/"
+- name: School of Computer Science
+  url: "http://www.cs.manchester.ac.uk/"
 - name: University of Manchester
-  url: "https://www.cs.manchester.ac.uk/"
+  url: "https://www.manchester.ac.uk/"
 
 # Short bio (displayed in user profile at end of posts)
-bio: I investigate personalised methodologies to monitor chronic conditions that affect daily human behaviour using mobile and wearable data.
+bio: IAM Lab short bio
 
-interests:
-- Digital Health
-- Ubiquitous Computing
-- HCI
+# interests:
+# - Digital Health
+# - Ubiquitous Computing
+# - HCI
 
-education:
-  courses:
-  - course: PhD in Computer Science
-    institution: The University of Manchester
-    year: 2019
+# education:
+#   courses:
+#   - course: PhD in Computer Science
+#     institution: The University of Manchester
+#     year: 2019
   
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/widgets/#icons
@@ -40,16 +40,16 @@ education:
 social:
 - icon: envelope
   icon_pack: fas
-  link: 'mailto:julio.vega@manchester.ac.uk'  # For a direct email link, use "mailto:test@example.org".
+  link: 'mailto:iam@manchester.ac.uk'  # For a direct email link, use "mailto:test@example.org".
 - icon: twitter
   icon_pack: fab
-  link: https://twitter.com/julio_ui
-- icon: google-scholar
-  icon_pack: ai
-  link: https://scholar.google.co.uk/citations?user=JjVygEEAAAAJ&hl=en
-- icon: github
-  icon_pack: fab
-  link: https://github.com/JulioV
+  link: https://twitter.com/iam_lab_uom
+# - icon: google-scholar
+#   icon_pack: ai
+# link: https://scholar.google.co.uk/citations?user=JjVygEEAAAAJ&hl=en
+# - icon: github
+#   icon_pack: fab
+#   link: https://github.com/JulioV
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.  
 # - icon: cv
@@ -62,8 +62,10 @@ email: ""
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.  
 user_groups:
-- Researchers
+- Laboratory
 # - Visitors
 ---
 
-Julio Vega investigates personalised methodologies to monitor chronic conditions that affect daily human behaviour using mobile and wearable data. In the long term, his goal is to explore how to enable patients to inform, amend, and evaluate their health tracking algorithms to improve disease self-management.
+IAM is interested in how users interact with the World Wide Web (Web) and how the Web, through its design, technology and infrastructure, enables users to interact with it. IAM is involved in the experimentation of accessibility technology, visual attention, and the Web to address the problems of Web accessibility. We believe that by understanding disabled-user’s interaction we enhance our understanding of all users operating in constrained modalities where the user is handicapped by both environment and technology.
+
+The IAM Lab is made up of a variety of academics, researchers and students, all of which have differing skills and research interests, but all of whom are interested in human interaction on the Web. In order to support the work conducted within the lab, a number of facilities, such as a User Lab and library are provided. Furthermore, dissemination of research is achieved through community involvement, including W3C Working Group Membership and conference organisation committees.
