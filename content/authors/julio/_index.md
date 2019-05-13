@@ -14,8 +14,10 @@ role: Postdoctoral Researcher
 
 # Organizations/Affiliations
 organizations:
-- name: University of Bristol
+- name: Website
   url: "https://juliovega.info/"
+- name: University of Bristol
+  url: "http://www.bristol.ac.uk/engineering/research/digital-health/"
 - name: University of Manchester
   url: "https://www.cs.manchester.ac.uk/"
 
