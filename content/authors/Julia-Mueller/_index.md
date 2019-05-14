@@ -14,6 +14,8 @@ role: Lecturer in Healthcare Sciences
 
 # Organizations/Affiliations
 organizations:
+- name: Personal Website
+  url: "https://www.research.manchester.ac.uk/portal/en/researchers/julia-mueller(2c5cd5c5-c1c7-46b6-8550-3ea37fbd8a9c).html"
 - name: University of Manchester
   url: "https://www.cs.manchester.ac.uk/"
 
