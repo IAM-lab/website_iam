@@ -24,7 +24,7 @@ bio: I have a background in psychology and I am interested in how technology can
 
 interests:
 - Psychology
-- Mobile devices; 
+- Mobile devices
 
 education:
   courses:
