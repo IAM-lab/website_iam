@@ -8,7 +8,7 @@ draft = false
 tags = ["help seeking", "online health information", "health information seeking", "lung cancer", "symptom appraisal"]
 
 # Project summary to display on homepage.
-summary = ""
+summary = "In this project we explored how people with lung cancer use the Web as a health information source to appraise their symptoms prior to diagnosis, and whether the Web plays a role in their help-seeking behaviour."
 
 # Slides (optional).
 #   Associate this page with Markdown slides.
