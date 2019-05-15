@@ -3,6 +3,8 @@ title = "The role of web-based information in help-seeking in those worried abou
 date = 2018-09-15T20:11:27+01:00
 draft = false
 
+authors = ["Julia Mueller", "Caroline Jay", "Simon Harper", "Chris Todd"]
+
 # Tags: can be used for filtering projects.
 # Example: `tags = ["machine-learning", "deep-learning"]`
 tags = ["help seeking", "online health information", "health information seeking", "lung cancer", "symptom appraisal"]

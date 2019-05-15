@@ -3,6 +3,8 @@ title = "Understanding BBC Audiences"
 date = 2018-09-15T20:11:27+01:00
 draft = false
 
+authors = ["Jonathan Carlton", "Andy Brown", "Caroline Jay",]
+
 # Tags: can be used for filtering projects.
 # Example: `tags = ["machine-learning", "deep-learning"]`
 tags = ["data science", "user behaviour modelling", "media"]

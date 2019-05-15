@@ -3,6 +3,8 @@ title = "STOP: Sentient Tracking Of Parkinson’s"
 date = 2017-10-12T20:11:27+01:00
 draft = false
 
+authors = ["Julio Vega", "Simon Harper", "Denzil Ferreira"]
+
 # Tags: can be used for filtering projects.
 # Example: `tags = ["machine-learning", "deep-learning"]`
 tags = ["Parkinson's", "ubicomp", "Digital Health", "smartphone"]
