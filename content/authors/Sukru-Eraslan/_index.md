@@ -1,6 +1,6 @@
 ---
 # Display name
-name: Dr Sukru Eraslan
+name: Sukru Eraslan
 
 # Username (this should match the folder name)
 authors:
@@ -33,11 +33,11 @@ interests:
 
 education:
   courses:
-  - course: PhD
+  - course: PhD in Computer Science
     institution: The University of Manchester
     year: 2016
   - course: MSc in Information Technology (Data Engineering)
-    institution: University of Wolverhampton
+    institution: The University of Wolverhampton
     year: 2011
   - course: BSc in Information Systems Engineering
     institution: Cyprus International University
