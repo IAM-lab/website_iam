@@ -52,7 +52,7 @@ social:
   icon_pack: fas
   link: 'mailto:sukru.eraslan@manchester.ac.uk'  # For a direct email link, use "mailto:test@example.org".
 - icon: google-scholar
-  icon_pack: fab
+  icon_pack: ai
   link: https://scholar.google.ca/citations?user=9fQEwhQAAAAJ&hl=en
 - icon: github
   icon_pack: fab

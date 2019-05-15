@@ -14,8 +14,6 @@ role: Postdoctoral Researcher
 
 # Organizations/Affiliations
 organizations:
-- name: Personal Website
-  url: "https://juliovega.info/"
 - name: University of Bristol
   url: "http://www.bristol.ac.uk/engineering/research/digital-health/"
 - name: University of Manchester
@@ -49,6 +47,9 @@ social:
 - icon: google-scholar
   icon_pack: ai
   link: https://scholar.google.co.uk/citations?user=JjVygEEAAAAJ&hl=en
+- icon: researchgate
+  icon_pack: fab
+  link: https://www.researchgate.net/profile/Julio_Vega7
 - icon: github
   icon_pack: fab
   link: https://github.com/JulioV
