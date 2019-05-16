@@ -23,7 +23,6 @@ with  open(path,'r') as file:
         db.entries = []
         with open(bib, 'r', encoding='utf-8') as bibtex_file:
                 parser = BibTexParser(common_strings=True)
-                parser.customization = convert_to_unicode
                 bib_database = bibtexparser.load(bibtex_file, parser=parser)
                 for entry in bib_database.entries:
                     if author in str(entry):
