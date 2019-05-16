@@ -1,5 +1,5 @@
 [build]
-  command = "hugo"
+  command = "python download_bib.py && hugo"
   publish = "public"
 
 [build.environment]
