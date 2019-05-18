@@ -10,11 +10,11 @@ from bibtexparser.bibdatabase import BibDatabase
 from bibtexparser.customization import convert_to_unicode
 
 path = "bibliography/dblp-ids.txt"
-ignore_files_from_dblp = []
+ignore_files_from_dblp = ["DBLP:conf/assets/2006"]
 with  open(path,'r') as file:
     file_name = 0
     for line in file.read().splitlines() :
-        id, author = line.split("|")
+        id, author_name = line.split("|")
         file_name += 1
         bib =  f'bibliography/bib/{file_name}.bib'
         urllib.request.urlretrieve(id, bib)
@@ -26,7 +26,8 @@ with  open(path,'r') as file:
                 parser = BibTexParser(common_strings=True)
                 bib_database = bibtexparser.load(bibtex_file, parser=parser)
                 for entry in bib_database.entries:
-                    if author in str(entry) and not any(bibkey in str(entry) for bibkey in ignore_files_from_dblp):
+                    # "author" gets rid off entries without authors including crossref entries for proceedings
+                    if author_name in str(entry) and ("author" in str(entry)) and not any(bibkey in str(entry) for bibkey in ignore_files_from_dblp):
                         db.entries.append(entry)
 
         writer = BibTexWriter()
