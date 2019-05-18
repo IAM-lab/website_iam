@@ -1,42 +1,107 @@
-# [Academic Kickstart](https://sourcethemes.com/academic/)
+# IAM Lab website
 
-**Academic** makes it easy to create a beautiful website for free using Markdown, Jupyter, or RStudio. Customize anything on your site with widgets, themes, and language packs. [Check out the latest demo](https://academic-demo.netlify.com/) of what you'll get in less than 10 minutes, or [view the showcase](https://sourcethemes.com/academic/#expo).
+This website is built in Hugo using the [Academic Kickstart](https://sourcethemes.com/academic/) template. Check the [docs](https://sourcethemes.com/academic/docs/page-builder/) if you want to add new modules or update the template. The source code is hosted on the IAM Lab GitHub organisation. The compiled website is hosted on Netlify with continuous integration, Simon will have the password to the Netlify account in case you need to see the deployment logs if one of your git push broke the website.
 
-**Academic Kickstart** provides a minimal template to kickstart your new website.
+## Before adding an image
+Optimise any image to keep the website light and fast using [https://bulkresizephotos.com](https://bulkresizephotos.com). Choose your image, and got to `File Size` choosing a max File image of 100kb. You can also use that website to resize your photos.
 
-- [**Get Started**](#install)
-- [View the documentation](https://sourcethemes.com/academic/docs/)
-- [Ask a question](http://discuss.gohugo.io/)
-- [Request a feature or report a bug](https://github.com/gcushen/hugo-academic/issues)
-- Updating? View the [Update Guide](https://sourcethemes.com/academic/docs/update/) and [Release Notes](https://sourcethemes.com/academic/updates/)
-- Support development of Academic:
-  - [Donate a coffee](https://paypal.me/cushen)
-  - [Become a backer on Patreon](https://www.patreon.com/cushen)
-  - [Decorate your laptop or journal with an Academic sticker](https://www.redbubble.com/people/neutreno/works/34387919-academic)
-  - [Wear the T-shirt](https://academic.threadless.com/)
+## Correct typos
 
-[![Screenshot](https://raw.githubusercontent.com/gcushen/hugo-academic/master/academic.png)](https://github.com/gcushen/hugo-academic/)
+You can use GitHub's GUI to correct any typos. Go to the file you want to modify, for example, [Alan's profile](https://github.com/IAM-lab/website_iam/blob/master/content/authors/Alan-Davies/_index.md) and click on the pencil icon. Once any changes are done, add a commit **title** (for example, "Add new affiliation for Alan") and optionally a **description**, then click _Commit changes_. The site will deploy itself, and you should see your changes online within ~30 sec.
 
-## Install
+## Add/Modify/Delete new people, project, sections, news
 
-You can choose from one of the following four methods to install:
+**First, you need to set up your dev environment:**
 
-* [**one-click install using your web browser (recommended)**](https://sourcethemes.com/academic/docs/install/#install-with-web-browser)
-* [install on your computer using **Git** with the Command Prompt/Terminal app](https://sourcethemes.com/academic/docs/install/#install-with-git)
-* [install on your computer by downloading the **ZIP files**](https://sourcethemes.com/academic/docs/install/#install-with-zip)
-* [install on your computer with **RStudio**](https://sourcethemes.com/academic/docs/install/#install-with-rstudio)
+1. `git clone https://github.com/IAM-lab/website_iam.git iam_website`
+2. `cd iam_website`
+3. `git submodule update --init --recursive`
+4. `git pull`
+5. Download [Hugo Extended](https://github.com/gohugoio/hugo/releases) version for your platform and copy the relevant binary to the root of your `iam_website` folder
+6. Run `hugo serve` at the root level of `iam_website`, if everything went well you should see the website in [localhost:1313](http://localhost:1313)
 
-Then [personalize your new site](https://sourcethemes.com/academic/docs/get-started/).
+Once you have made any changes outlined below, submit them to the repo, and they will be automatically deployed:
 
-## Ecosystem
+1. `git add .`
+2. `git commit -m "MEANINGFUL message please"`
+3. `git push`
 
-* **[Academic Admin](https://github.com/sourcethemes/academic-admin):** An admin tool to import publications from BibTeX or import assets for an offline site
-* **[Academic Scripts](https://github.com/sourcethemes/academic-scripts):** Scripts to help migrate content to new versions of Academic
+### Add People
 
-## License
+1. Go to `iam_website/content/authors`
+2. Copy `Julio-Vega` folder and paste it with the name of the new person, _replace spaces with dashes_ (for example `Jane-Doe`).
+3. Change:
+   -  `name`
+   -  `authors` (this value has to match the folder name without dashes)
+   -  leave `superuser` as false
+   -  `role`
+   -  `organizations`
+   -  `bio` (1 or 2 sentences)
+   -  `interests` (keywords)
+   -  `education`
+   -  `social links` (you can use [font awesome icons](https://fontawesome.com/icons?d=gallery) but be careful to choose the right `icon pack`)
+   -  ignore `email`
+   -  `user_groups` accordingly to the group you want this person to belong to in People (to see all available groups see `user_groups` in `content/home/people.md`)
+4.  Add a profile image named `avatar.png` or `avatar.jpg` to this person's folder.
+5.  At the end your file structure should be something like:
+    - `content/authors/Jane-Doe/_index.md`
+    - `content/authors/Jane-Doe/avatar.jpg`
 
-Copyright 2017-present [George Cushen](https://georgecushen.com).
+### Modify People
 
-Released under the [MIT](https://github.com/sourcethemes/academic-kickstart/blob/master/LICENSE.md) license.
+Just modify their `_index.md` file.
 
-[![Analytics](https://ga-beacon.appspot.com/UA-78646709-2/academic-kickstart/readme?pixel)](https://github.com/igrigorik/ga-beacon)
+### Delete People
+
+Just delete their folder.
+
+### Add Projects
+
+1. In your `iam_website` folder execute `hugo new  --kind project project/my-project-name`
+2. Just as with people, edit the newly created file `content/project/my-project-name.md`.
+3. If you want to link a project to people in the lab, add a field `authors` within the two `+++`. For example `authors = ["Jonathan Carlton", "Andy Brown", "Caroline Jay"]`
+4. You can link the project to an external project website by setting the `external_link: "http://external-project.com"` variable (our internal page won't be shown tho')
+5. You can add a project image named `featured.png` or `featured.jpg` to this project's folder.
+6.  You can add a longer project description below the final `+++`.
+
+### Modify Projects
+
+Just modify its `index.md` file.
+
+### Delete Projects
+
+Just delete its folder.
+
+### Add News
+
+1. In your `iam_website` folder execute `hugo new  --kind post post/my-article-name`
+2. You can add a news image named `featured.png` or `featured.jpg` to this news' folder.
+3. Feel free to add `tags` and `categories`  to its `index.md` file. The former will show up in the lab's world cloud, and the latter function as filters (try going to `cs.iam-lab/categories/your-category`)
+4. Make sure you link your news to a project by setting `projects = ["project-folder"]`
+
+### Modify News
+Just modify its `index.md` file.
+
+### Delete News
+
+Just delete its folder.
+
+### Add Publications
+
+There are two ways of adding publications, one for permanent staff and one for the rest.
+
+For permanent staff add to `bibliography/dblp-ids.txt` their [dblp PID resource URI](https://dblp.uni-trier.de/faq/17334565.html) with a `.bib.` extension followed by a pipe `|` followed by their name as it appears in their publications: `https://dblp.org/pid/h/SimonHarper.bib|Simon Harper`. I created a python script `download_bib.py` that will take those URIs and download the respective bib files. We use the name after `|` to get rid of bib entries that are crossref entries (entries with conference proceedings info instead of personal publications). Why do we use dblp? Because it exposes curated bib files for free and without restrictions, having consistent bib keys allows us to ignore duplicates automatically.
+
+For non-permanent people (e.g. PhD students) it is best to add individual bib files to the folder `bibliography/bib`. **Be careful with duplicates**, the website won't detect if two papers are the same if they have different bib keys. This option is ideal for adding a bunch of specific papers not indexed by dblp or not co-authored by permanent staff.
+
+In any case, `download_bib.py` will read the dblp URIs and the individual bib files and will execute [Academic Admin](https://github.com/sourcethemes/academic-admin) to import all the bib entries automatically. If you want to get rid of specific papers, this script is the best place to do it, modify line 28 with something like `if (author in str(entry)) or (bibkey in str(entry)):`.
+
+The `download_bib.py` is executed in Netlify servers every time there's a push to the website git repo. This is configured in line 2 of `netlify.toml`, while Academic Admin is specified in `requirements.txt`, and the python version in `runtime.txt`.
+
+### Modify Publications
+
+If you want to modify papers downloaded automatically from dblp, you would need to modify the parsed bib entry after line 28 of `download_bib.py` before it is appended to `db.entries`. If you want to modify papers of non-permanent staff just change the entry in the individual bib files in `bibliography/bib`.
+
+### Delete Publications
+
+If you want to get rid of papers downloaded automatically from dblp, modify line 28 of `download_bib.py` as mentioned above. Note that by default, the repo already contains Simon, Caroline, and Markel's publications up to April 2019, if you want to delete any of those just modify the corresponding folder in `content/publication`. If you want to get rid of papers of non-permanent staff, just delete the entry in the individual bib files in `bibliography/bib`.
