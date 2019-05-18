@@ -94,14 +94,14 @@ For permanent staff add to `bibliography/dblp-ids.txt` their [dblp PID resource 
 
 For non-permanent people (e.g. PhD students) it is best to add individual bib files to the folder `bibliography/bib`. **Be careful with duplicates**, the website won't detect if two papers are the same if they have different bib keys. This option is ideal for adding a bunch of specific papers not indexed by dblp or not co-authored by permanent staff.
 
-In any case, `download_bib.py` will read the dblp URIs and the individual bib files and will execute [Academic Admin](https://github.com/sourcethemes/academic-admin) to import all the bib entries automatically. If you want to get rid of specific papers, this script is the best place to do it, modify line 28 with something like `if (author in str(entry)) or (bibkey in str(entry)):`.
+In any case, `download_bib.py` will read the dblp URIs and the individual bib files and will execute [Academic Admin](https://github.com/sourcethemes/academic-admin) to import all the bib entries automatically.
 
 The `download_bib.py` is executed in Netlify servers every time there's a push to the website git repo. This is configured in line 2 of `netlify.toml`, while Academic Admin is specified in `requirements.txt`, and the python version in `runtime.txt`.
 
 ### Modify Publications
 
-If you want to modify papers downloaded automatically from dblp, you would need to modify the parsed bib entry after line 28 of `download_bib.py` before it is appended to `db.entries`. If you want to modify papers of non-permanent staff just change the entry in the individual bib files in `bibliography/bib`.
+If you want to modify papers downloaded automatically from dblp, you would need to modify the parsed bib entry after line 29 of `download_bib.py` before it is appended to `db.entries`. If you want to modify papers of non-permanent staff just change the entry in the individual bib files in `bibliography/bib`.
 
 ### Delete Publications
 
-If you want to get rid of papers downloaded automatically from dblp, modify line 28 of `download_bib.py` as mentioned above. Note that by default, the repo already contains Simon, Caroline, and Markel's publications up to April 2019, if you want to delete any of those just modify the corresponding folder in `content/publication`. If you want to get rid of papers of non-permanent staff, just delete the entry in the individual bib files in `bibliography/bib`.
+If you want to get rid of specific papers downloaded from dblp, add their bibkeys to `ignore_files_from_dblp` in line 13 of `download_bib.py`. If you want to get rid of papers of non-permanent staff, just delete the entry in the individual bib files in `bibliography/bib`.

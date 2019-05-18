@@ -10,6 +10,7 @@ from bibtexparser.bibdatabase import BibDatabase
 from bibtexparser.customization import convert_to_unicode
 
 path = "bibliography/dblp-ids.txt"
+ignore_files_from_dblp = []
 with  open(path,'r') as file:
     file_name = 0
     for line in file.read().splitlines() :
@@ -25,7 +26,7 @@ with  open(path,'r') as file:
                 parser = BibTexParser(common_strings=True)
                 bib_database = bibtexparser.load(bibtex_file, parser=parser)
                 for entry in bib_database.entries:
-                    if author in str(entry):
+                    if author in str(entry) and not any(bibkey in str(entry) for bibkey in ignore_files_from_dblp):
                         db.entries.append(entry)
 
         writer = BibTexWriter()
