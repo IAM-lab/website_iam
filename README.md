@@ -89,11 +89,11 @@ Just delete its folder.
 
 ### Add Publications
 
-There are two ways of adding publications, one for permanent and one for temporal staff.
+There are two ways of adding publications, one for permanent and one for temporary staff.
 
 For permanent staff add to `bibliography/dblp-ids.txt` their [dblp PID resource URI](https://dblp.uni-trier.de/faq/17334565.html) with a `.bib.` extension followed by a pipe `|` followed by their name as it appears in their publications: `https://dblp.org/pid/h/SimonHarper.bib|Simon Harper`. A python script, `download_bib.py`, takes those URIs and downloads the respective bib files. It uses the name after `|` to make sure all bib entries belong to this author (in case of errors on dblp). Why do we use dblp? Because it exposes curated bib files for free and without restrictions, having consistent bib keys allows us to ignore duplicates automatically.
 
-For non-permanent people (e.g. PhD students) it is best to add individual bib files to the folder `bibliography/bib`. **Be careful with duplicates**, the website won't detect if two papers are the same if they have different bib keys. **This option is ideal for adding papers not indexed by dblp or not co-authored by permanent staff.**
+For temporary people (e.g. PhD students) it is best to add individual bib files to the folder `bibliography/bib`. **Be careful with duplicates**, the website won't detect if two papers are the same if they have different bib keys. **This option is ideal for adding papers not indexed by dblp or not co-authored by permanent staff.**
 
 In any case, `download_bib.py` reads the dblp and individual bib files and executes [Academic Admin](https://github.com/sourcethemes/academic-admin) to import all bib entries automatically. `download_bib.py` is executed on Netlify's servers after every push to the website's git repo. The bash command to do so is set in line 2 of `netlify.toml`, Academic Admin is installed from `requirements.txt` and the Python interpreter  is set in `runtime.txt`.
 
