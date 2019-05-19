@@ -15,7 +15,7 @@ role: Lecturer in Health Data Sciences
 # Organizations/Affiliations
 organizations:
 - name: Personal Website
-  url: "https://www.research.manchester.ac.uk/portal/alan.davies-2.html"
+  url: "https://alandavies.netlify.com/"
 - name: University of Manchester
   url: "https://www.cs.manchester.ac.uk/"
 
