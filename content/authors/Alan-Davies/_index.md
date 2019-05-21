@@ -1,6 +1,6 @@
 ---
 # Display name
-name: Dr Alan Davies
+name: Alan Davies
 
 # Username (this should match the folder name)
 authors:
@@ -26,6 +26,9 @@ bio: I have a background in Computer Science (Ph.D) and Nursing Science (BSc) as
 interests:
 - Applied Health
 - Digital Health
+- Data Science
+- Machine Learning
+- UX/HCI
   
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/widgets/#icons

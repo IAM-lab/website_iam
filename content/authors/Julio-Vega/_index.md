@@ -26,6 +26,7 @@ interests:
 - Digital Health
 - Ubiquitous Computing
 - HCI
+- Data Science
 
 education:
   courses:
