@@ -64,6 +64,4 @@ user_groups:
 # - Visitors
 ---
 
-For my PhD, in collaboration with BBC R&D, I'm investigating how both machine learning and data science techniques can be leveraged to model user behaviours with online and broadcast media. My PhD is part of the Data Science Research Partnership between BBC R&D and several UK Universities, and I'm supervised by John Keane, Andy Brown, and Caroline Jay.
-
-Before coming to Manchester, I graduated from Newcastle University with an integrated master's degree in Computer Science in 2017, where I specialised in Cloud Computing and Big Data. During my time at Newcastle University, I worked within a collaboration between Newcastle and Pontifical Catholic University of Rio de Janeiro (PUC-RIO) focusing on how machine learning and network analysis on social media can be leveraged to aid in the prevention of mosquito-borne tropical diseases; dengue fever and zika, in sub-tropical communities (specifically in Brazil).
+My research involves engineering Conversational Agents to improve understanding in an automotive environment. I used to work as a Data Scientist for 2Excel geo, where I was challenged with Computer Vision applications with handling hyper-spectral images. Before that, I was working as a research assistant at Lancaster University for tracking malicious flows in a Software Defined Network, and this is where I completed my MSc in Data Science where I had an internship with Boots.
