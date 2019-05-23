@@ -31,7 +31,7 @@ education:
   courses:
   - course: PhD in Computer Science
     institution: The University of Manchester
-    year: 2019
+    year: 2007
   
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/widgets/#icons
@@ -56,7 +56,7 @@ email: ""
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.  
 user_groups:
-- Alumni
+- Honorary Research Fellows
 # - Visitors
 ---
 
