@@ -1,3 +1,4 @@
 https://dblp.org/pid/h/SimonHarper.bib|Simon Harper
 https://dblp.org/pid/81/5370.bib|Caroline Jay
 https://dblp.org/pid/79/7015.bib|Markel Vigo
+https://dblp.org/pid/49/10484.bib|Sarah Clinch
