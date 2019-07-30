@@ -7,7 +7,7 @@ authors = ["Julio Vega", "Caroline Jay", "Markel Vigo", "Simon Harper"]
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["machine-learning", "deep-learning"]`
-tags = ["Parkinson's", "behaviour modelling", "Digital Health"]
+tags = ["parkinson's", "behaviour modelling", "digital health"]
 
 # Project summary to display on homepage.
 summary = "Personalised, unobtrusive and longitudinal monitoring of Parkinson's Disease symptom fluctions using smartphone data"
