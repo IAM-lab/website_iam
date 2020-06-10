@@ -20,12 +20,12 @@ organizations:
   url: "https://www.manchester.ac.uk/"
 
 # Short bio (displayed in user profile at end of posts)
-bio: A PhD candidate in Human-Computer Interaction and affective computing. 
+bio: A PhD candidate in Human-Computer Interaction and affective computing.
 
 interests:
 - HCI
 - Affective computing
-- Physiological sensors 
+- Physiological sensors
 
 education:
   courses:
@@ -39,7 +39,7 @@ education:
     institution: Covenant University
     year: 2012
 
-  
+
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/widgets/#icons
 #   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
@@ -65,12 +65,12 @@ social:
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: ""
-  
+
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.  
 user_groups:
-- PhD Students
+- Alumni
 # - Visitors
 ---
 
-A PhD candidate in Human-Computer Interaction and affective computing. During the past 3 years, I researched on the use of pupillary response as a proxy to sense arousal, while also using eye-tracking technology to identify the user’s focal attention during moments of increased arousal. Future research interests include the use of unobtrusive technologies for affect detection in naturalistic settings. Previously, I worked as a software developer and consultant delivering Enterprise Resource Planning (ERP) solutions using SAP platform. 
+A PhD candidate in Human-Computer Interaction and affective computing. During the past 3 years, I researched on the use of pupillary response as a proxy to sense arousal, while also using eye-tracking technology to identify the user’s focal attention during moments of increased arousal. Future research interests include the use of unobtrusive technologies for affect detection in naturalistic settings. Previously, I worked as a software developer and consultant delivering Enterprise Resource Planning (ERP) solutions using SAP platform.
