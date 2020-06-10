@@ -72,3 +72,5 @@ user_groups:
 - PhD Students
 # - Visitors
 ---
+
+My research investigates the role and application of Artificial Intelligence (AI) in a cultural environment. I am mainly interested in the use of machine learning - such as recommender systems and unsupervised learning - as a curatorial tool and as a means to analyse and explore museum collections. These collections are rich, heterogenous (multimodal) datasets holding the knowledge and assets of our society’s memory institutions. Working with my partner institutions (the Smithsonian, the National Gallery London, Manchester Art Gallery and the Whitworth) enables me to explore the role of ML in museums from a computational, and also from a societal/social perspective.
